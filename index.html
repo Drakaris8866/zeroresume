@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sofia+Sans+Semi+Condensed:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__container container">
+          <div class="header__logo logo">Artem</div>
+          <nav class="header__navbar">
+            <ul id="menu" class="navbar__list">
+              <li class="navbar__item"><a href="#home"> Home</a></li>
+              <li class="navbar__item"><a href="#skills">Skills</a></li>
+              <li class="navbar__item"><a href="#works">Portfolio</a></li>
+              <li class="navbar__item"><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamb">
+              <div class="hamb__field" id="hamb">
+                <span class="bar"></span> <span class="bar"></span>
+                <span class="bar"></span>
+              </div>
+            </div>
+          </nav>
+        </div>
+        <div class="popup" id="popup"></div>
+      </header>
+      <section id="home" class="hello">
+        <div class="hello__content">
+          <div class="hello__img">
+            <img src="./assets/img/preview.jpg" alt="" />
+          </div>
+          <h1 class="hello__title">Artem Romanovskiy</h1>
+          <span class="hello__subTitle">Front-end developer</span>
+        </div>
+
+        <a href="#skills" class="hello__arrow">
+          <span></span>
+          <span></span>
+          <span></span>
+        </a>
+        <img class="hello__bg" src="./assets/img/bg.png" alt="" />
+      </section>
+      <section class="skills" id="skills">
+        <div class="container">
+          <h2 class="skills__title">Мy Resume</h2>
+          <div class="skills__row">
+            <div class="skills__column column-skills">
+              <div class="column-skills__header">
+                <h2>Languages</h2>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="800px"
+                  height="800px"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                >
+                  <path
+                    d="M5 14L5.90909 11.3333M11 14L9.90909 11.3333M9.90909 11.3333L7.72727 6L5.90909 11.3333M9.90909 11.3333H5.90909"
+                    stroke="#f3f3f3"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M13 11.8462H16.5M20 11.8462H18.25M16.5 11.8462V10M16.5 11.8462H17.375H18.25M18.25 11.8462C18.0556 13.2821 16.2667 17.0154 13 18M18.8333 18C17.6667 17.3846 14.6333 15.1692 14.1667 13.6923"
+                    stroke="#f3f3f3"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <div class="column-skills__content">
+                <div class="column-skills__text">
+                  <p>Belarusian</p>
+                  <span>С1 - Advanced</span>
+                </div>
+                <div class="column-skills__text">
+                  <p>Russian</p>
+                  <span>С1 - Advanced</span>
+                </div>
+                <div class="column-skills__text">
+                  <p>English</p>
+                  <span>A2 - Pre-Intermediate</span>
+                </div>
+              </div>
+            </div>
+            <div class="skills__column column-skills">
+              <div class="column-skills__header">
+                <h2>Skills</h2>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  fill="#000000"
+                  height="800px"
+                  width="800px"
+                  version="1.1"
+                  id="Layer_1"
+                  viewBox="0 0 512 512"
+                  xml:space="preserve"
+                >
+                  <g>
+                    <g>
+                      <g>
+                        <path
+                          d="M268.18,162.303l-2.993,21.876c-0.55,4.023,1.157,8.023,4.441,10.41c1.918,1.393,4.191,2.105,6.479,2.105     c1.631,0,3.272-0.363,4.794-1.098l19.88-9.605l19.88,9.605c3.656,1.767,7.985,1.38,11.272-1.007     c3.284-2.387,4.991-6.386,4.441-10.408l-2.992-21.876l15.278-15.94c2.81-2.931,3.781-7.17,2.526-11.031     c-1.255-3.861-4.531-6.72-8.527-7.44l-21.729-3.914l-10.439-19.457c-1.919-3.578-5.65-5.81-9.711-5.81     c-4.061,0-7.791,2.233-9.711,5.81l-10.439,19.457l-21.729,3.914c-3.995,0.72-7.272,3.579-8.526,7.44     c-1.255,3.861-0.284,8.101,2.526,11.031L268.18,162.303z M289.779,144.725c3.31-0.597,6.168-2.672,7.757-5.636l3.244-6.047     l3.244,6.047c1.589,2.963,4.447,5.039,7.757,5.636l6.753,1.217l-4.749,4.954c-2.327,2.429-3.419,5.787-2.963,9.119l0.93,6.798     l-6.178-2.985c-1.514-0.732-3.154-1.098-4.795-1.098s-3.281,0.366-4.795,1.098l-6.178,2.984l0.931-6.797     c0.455-3.333-0.636-6.691-2.963-9.119l-4.749-4.955L289.779,144.725z"
+                        />
+                        <path
+                          d="M171.294,136.681h51.244c6.085,0,11.02-4.934,11.02-11.02s-4.935-11.02-11.02-11.02h-51.244     c-6.085,0-11.02,4.934-11.02,11.02S165.209,136.681,171.294,136.681z"
+                        />
+                        <path
+                          d="M171.294,180.762h51.244c6.085,0,11.02-4.934,11.02-11.02c0-6.086-4.935-11.02-11.02-11.02h-51.244     c-6.085,0-11.02,4.934-11.02,11.02C160.274,175.828,165.209,180.762,171.294,180.762z"
+                        />
+                        <path
+                          d="M268.18,276.814l-2.993,21.876c-0.55,4.022,1.157,8.023,4.441,10.409c3.285,2.388,7.615,2.774,11.273,1.007l19.88-9.605     l19.88,9.605c1.523,0.735,3.161,1.098,4.794,1.098c2.288,0,4.562-0.712,6.479-2.105c3.284-2.387,4.991-6.386,4.441-10.409     l-2.992-21.876l15.278-15.94c2.81-2.931,3.781-7.17,2.526-11.031c-1.255-3.861-4.531-6.72-8.527-7.44l-21.729-3.914     l-10.439-19.457c-1.919-3.578-5.65-5.81-9.711-5.81c-4.061,0-7.791,2.233-9.711,5.81l-10.439,19.457l-21.729,3.914     c-3.995,0.72-7.272,3.579-8.526,7.44c-1.255,3.861-0.284,8.101,2.526,11.031L268.18,276.814z M289.779,259.237     c3.31-0.597,6.168-2.672,7.757-5.636l3.244-6.047l3.244,6.047c1.589,2.963,4.447,5.04,7.757,5.636l6.753,1.217l-4.749,4.954     c-2.327,2.429-3.419,5.787-2.963,9.119l0.93,6.799l-6.178-2.985c-1.514-0.732-3.154-1.098-4.795-1.098s-3.281,0.366-4.795,1.098     l-6.178,2.984l0.931-6.798c0.455-3.332-0.636-6.691-2.963-9.119l-4.749-4.955L289.779,259.237z"
+                        />
+                        <path
+                          d="M171.294,251.194h51.244c6.085,0,11.02-4.934,11.02-11.02s-4.935-11.02-11.02-11.02h-51.244     c-6.085,0-11.02,4.934-11.02,11.02S165.209,251.194,171.294,251.194z"
+                        />
+                        <path
+                          d="M171.294,295.274h51.244c6.085,0,11.02-4.934,11.02-11.02s-4.935-11.02-11.02-11.02h-51.244     c-6.085,0-11.02,4.934-11.02,11.02C160.274,290.34,165.209,295.274,171.294,295.274z"
+                        />
+                        <path
+                          d="M268.18,391.328l-2.993,21.875c-0.55,4.022,1.157,8.023,4.441,10.409c1.918,1.394,4.191,2.105,6.479,2.105     c1.631,0,3.272-0.363,4.794-1.098l19.88-9.605l19.88,9.605c3.656,1.767,7.987,1.379,11.272-1.007s4.991-6.386,4.441-10.409     l-2.992-21.876l15.278-15.939c2.81-2.931,3.781-7.17,2.526-11.031c-1.255-3.861-4.53-6.721-8.526-7.44l-21.731-3.915     l-10.439-19.457c-1.919-3.578-5.65-5.81-9.711-5.81c-4.061,0-7.791,2.233-9.711,5.81l-10.439,19.457l-21.729,3.915     c-3.996,0.72-7.272,3.578-8.526,7.44c-1.255,3.861-0.284,8.1,2.526,11.031L268.18,391.328z M289.781,373.748     c3.31-0.596,6.167-2.671,7.756-5.636l3.244-6.047l3.244,6.047c1.589,2.963,4.445,5.039,7.756,5.636l6.754,1.217l-4.749,4.953     c-2.327,2.428-3.419,5.786-2.963,9.119l0.93,6.799l-6.178-2.985c-1.514-0.732-3.154-1.098-4.795-1.098s-3.281,0.366-4.795,1.098     l-6.178,2.985l0.931-6.798c0.455-3.332-0.636-6.691-2.963-9.119l-4.749-4.954L289.781,373.748z"
+                        />
+                        <path
+                          d="M171.294,365.706h51.244c6.085,0,11.02-4.934,11.02-11.02s-4.935-11.02-11.02-11.02h-51.244     c-6.085,0-11.02,4.934-11.02,11.02S165.209,365.706,171.294,365.706z"
+                        />
+                        <path
+                          d="M171.294,409.786h51.244c6.085,0,11.02-4.934,11.02-11.02s-4.935-11.02-11.02-11.02h-51.244     c-6.085,0-11.02,4.934-11.02,11.02S165.209,409.786,171.294,409.786z"
+                        />
+                        <path
+                          d="M424.509,16.53h-77.593v-5.51c0-6.086-4.935-11.02-11.02-11.02H176.105c-6.085,0-11.02,4.934-11.02,11.02v5.51H87.491     c-6.085,0-11.02,4.934-11.02,11.02v473.43c0,6.086,4.935,11.02,11.02,11.02h337.018c6.085,0,11.02-4.934,11.02-11.02V27.55     C435.529,21.464,430.596,16.53,424.509,16.53z M187.125,22.04h137.751v38.57H187.125V22.04z M369.409,82.651v363.228H142.591     V82.651H369.409z M413.489,489.96H98.511V38.57h66.574v22.04h-33.513c-6.085,0-11.02,4.934-11.02,11.02v385.269     c0,6.086,4.935,11.02,11.02,11.02h248.857c6.085,0,11.02-4.934,11.02-11.02V71.631c0-6.086-4.935-11.02-11.02-11.02h-33.512     V38.57h66.573V489.96z"
+                        />
+                      </g>
+                    </g>
+                  </g>
+                </svg>
+              </div>
+              <div class="column-skills__content">
+                <div class="column-skills__text">
+                  <p>HTML / CSS</p>
+                </div>
+                <div class="column-skills__text">
+                  <p>SCSS / Tailwind CSS</p>
+                </div>
+                <div class="column-skills__text">
+                  <p>React / Redux</p>
+                </div>
+                <div class="column-skills__text">
+                  <p>Next</p>
+                </div>
+                <div class="column-skills__text">
+                  <p>JS</p>
+                </div>
+                <div class="column-skills__text">
+                  <p>Typescript</p>
+                </div>
+                <div class="column-skills__text">
+                  <p>Node</p>
+                </div>
+                <div class="column-skills__text">
+                  <p>Figma / Photoshop</p>
+                </div>
+              </div>
+            </div>
+            <div class="skills__column column-skills">
+              <div class="column-skills__header">
+                <h2>Education</h2>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="800px"
+                  height="800px"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M17.673 5.606a3326.02 3326.02 0 0 1-5.671-2.674L.138 8.524l2.03.98L2 9.531V20h1v-9.626l.72-.124.28.135v5.288c0 .914 5.206 3.533 6.249 4.049a3.89 3.89 0 0 0 3.48-.026C20 16.486 20 15.895 20 15.673v-5.288l3.854-1.857s-3.8-1.801-6.181-2.922zM19 15.504a51.526 51.526 0 0 1-5.726 3.302 2.884 2.884 0 0 1-2.582.02A40.184 40.184 0 0 1 5 15.521v-4.655l7 3.373 7-3.373zm-7-2.373L5.416 9.958l6.469-1.115-.17-.987-7.85 1.354-1.403-.676 9.537-4.495c.825.393 8.523 4.014 9.542 4.494z"
+                  />
+                  <path fill="none" d="M0 0h24v24H0z" />
+                </svg>
+              </div>
+              <div class="column-skills__content">
+                <div class="column-skills__text">
+                  <p>Belarusian National Technical University, Minsk</p>
+                  <span>2020 - 2024</span>
+                </div>
+                <div class="column-skills__text">
+                  <p>React JS Fundamental Course</p>
+                  <span>Ulbi TV,</span>
+                  <span>2022</span>
+                </div>
+                <div class="column-skills__text">
+                  <p>FRONT-END for advanced</p>
+                  <span>htmllessons.ru,</span>
+                  <span>2022</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section  class="works" id="works">
+        <div class="works__container container">
+          <div class="works__title">
+            <h2>My Works</h2>
+          </div>
+          <div class="works__content">
+            <div class="works__item item-woks">
+              <span class="item-woks__number">01</span>
+              <div class="item-woks__content">
+                <p class="item-woks__title">Cinema</p>
+                <span class="item-woks__link"
+                  ><a target="_blank" href="https://cinema-puce.vercel.app/"
+                    >Visit<svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 476.213 476.213"
+                    >
+                      <path
+                        d="M405.606 167.5l-21.212 21.213 34.393 34.393H0v30h418.787L384.394 287.5l21.212 21.213 70.607-70.607"
+                      ></path></svg></a
+                ></span>
+              </div>
+              <img
+                class="item-woks__bg"
+                src="./assets/img/slider/1.png"
+                alt=""
+              />
+              <div class="item-woks__filter"></div>
+            </div>
+            <div class="works__item item-woks">
+              <span class="item-woks__number">02</span>
+              <div class="item-woks__content">
+                <p class="item-woks__title">Pizza</p>
+                <span class="item-woks__link"
+                  ><a target="_blank" href="https://cinema-puce.vercel.app/"
+                    >Visit<svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 476.213 476.213"
+                    >
+                      <path
+                        d="M405.606 167.5l-21.212 21.213 34.393 34.393H0v30h418.787L384.394 287.5l21.212 21.213 70.607-70.607"
+                      ></path></svg></a
+                ></span>
+              </div>
+              <img
+                class="item-woks__bg"
+                src="./assets/img/slider/2.png"
+                alt=""
+              />
+              <div class="item-woks__filter"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="contact" class="contact">
+        <div class="container">
+          <div class="contact__logo logo">Artem</div>
+          <div class="contact__row">
+            <div class="contact__column">
+              <a href="https://vk.com/id246096172" target="_blank">VK</a>
+            </div>
+            <div class="contact__column">
+              <a
+                href="https://www.linkedin.com/in/%D0%B0%D1%80%D1%82%D0%B5%D0%BC-%D1%80%D0%BE%D0%BC%D0%B0%D0%BD%D0%BE%D0%B2%D1%81%D0%BA%D0%B8%D0%B9-b4086525a/"
+                target="_blank"
+                >Linkedin</a
+              >
+            </div>
+            <div class="contact__column">
+              <a href="https://github.com/Drakaris8866" target="_blank"
+                >GitHub</a
+              >
+            </div>
+          </div>
+          <div></div>
+        </div>
+      </section>
+      <section class="slider">
+        <div class="slider__line">
+          <img src="./assets/img/slider/111.jpg" alt="" />
+          <img src="./assets/img/slider/222.jpg" alt="" />
+          <img src="./assets/img/slider/444.jpg" alt="" />
+          <img src="./assets/img/slider/333.jpg" alt="" />
+        </div>
+        <div class="slider__controll controll-slider">
+          <div class="controll-slider__prev">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              width="80px"
+              height="80px"
+              viewBox="-4 0 20 20"
+              version="1.1"
+              style="transform: rotate(180deg)"
+            >
+              <title>
+                navigation / 1 - navigation, arrow, chevron, direction, forward,
+                move, right icon
+              </title>
+              <g
+                id="Free-Icons"
+                stroke="none"
+                stroke-width="1"
+                fill="none"
+                fill-rule="evenodd"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <g
+                  transform="translate(-751.000000, -674.000000)"
+                  id="Group"
+                  stroke="#f3f3f3"
+                  stroke-width="2"
+                >
+                  <g transform="translate(745.000000, 672.000000)" id="Shape">
+                    <polyline
+                      points="7 3 17.0011615 12.0021033 7 21.0042067"
+                    ></polyline>
+                  </g>
+                </g>
+              </g>
+            </svg>
+          </div>
+          <div class="controll-slider__next">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              width="80px"
+              height="80px"
+              viewBox="-4 0 20 20"
+              version="1.1"
+            >
+              <title>
+                navigation / 1 - navigation, arrow, chevron, direction, forward,
+                move, right icon
+              </title>
+              <g
+                id="Free-Icons"
+                stroke="none"
+                stroke-width="1"
+                fill="none"
+                fill-rule="evenodd"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <g
+                  transform="translate(-751.000000, -674.000000)"
+                  id="Group"
+                  stroke="#f3f3f3"
+                  stroke-width="2"
+                >
+                  <g transform="translate(745.000000, 672.000000)" id="Shape">
+                    <polyline
+                      points="7 3 17.0011615 12.0021033 7 21.0042067"
+                    ></polyline>
+                  </g>
+                </g>
+              </g>
+            </svg>
+          </div>
+        </div>
+      </section>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
